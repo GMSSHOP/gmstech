@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMS-TECH</title>
+</head>
+<style>
+    *{
+        padding: 0;margin: 0;
+        text-decoration: none;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('assets/fonts/scott-graham-5fNmWej4tAA-unsplash.jpg');
+    }
+    .body{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 255, 0.45);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 8fr 5fr;
+        grid-template-areas:
+        "AppBar AppBar AppBar"
+        "Main Main Main"
+        "Footer Footer Footer";
+    }
+    .AppBar{
+        grid-area: AppBar;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.364);
+        color: white;
+    }
+    .Menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .menu{
+        color: white;
+    }
+    .Main{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        grid-area: Main;
+    }
+    h1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        width: 200px;
+        height: 65px;
+        background-color: rgba(0, 68, 255, 0.591);
+        color: white;
+        border-top-right-radius: 55px;
+    }
+    h3{
+        margin-top: 10px;
+        color: rgb(255, 255, 255);
+    }
+    .span1{
+        color: white;
+        font-size: 24px;
+    }
+    .Footer{
+        display: grid;
+        grid-area: Footer;
+        width: 100%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.339);
+    }
+    .colomn{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    h2{
+        color: rgb(0, 42, 255);
+    }
+    .c{
+        display: grid;
+        margin-left: 30px;
+    }
+    a{
+        color: black;
+    }
+    .pub{
+        background-color: red;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="body">
+        <section class="AppBar">
+            <img class="logo" src="assets/fonts/LOGO.png" style="height: 80px;width: 200px;" alt="">
+            <div class="Menu">
+                <a href="index.html" class="menu">Apropos</a>
+                <a href="services.html" class="menu">Services</a>
+                <a href="blog.html" class="menu">Blog</a>
+                <a href="contact.html" class="menu">Contacts</a>
+            </div>
+        </section>
+        <section class="Main">
+            <h1>A PROPOS</h1>
+            <div class="text">
+                <h3><span class="span1">GMS-TECH</span> est une entreprise des services digitaux,</h3>
+                <h3>Les réseaux sociaux et des sites ont changé le monde et notre façon de communiquer. Ils ont été et restent un outil crucial pour unir l'humanité.Il n'est pas étonnant que de nombreuses plateformes de réseaux sociaux aient gagné de nombreux nouveaux utilisateurs à une époque où nous n'avions pas d'autre choix que d'être séparés.</h3>
+                <h3><span class="span1">GMS-TECH</span> est là pour vous faciliter vos différents services digitaux</h3>
+
+            </div>
+        </section>
+        <section class="Footer">
+            <div class="colomn">
+                <div class="c">
+                    <h2>Contacts</h2>
+                    <a href="tel:+22365421213">223 65 42 12 13</a>
+                    <a href="mailto:gmstech223@gmail.com">gmstech223@gmail.com</a>
+                    <a href="http://">www.gmstech223.com</a>
+                    <a href="http://">Instagram</a>
+                </div>
+                <div class="c">
+                    <h2>Menu</h2>
+                    <a href="" class="menuf">Services</a>
+                    <a href="" class="menuf">Blog</a>
+                    <a href="" class="menuf">Contacts</a>
+                </div>
+                <div class="pub"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
